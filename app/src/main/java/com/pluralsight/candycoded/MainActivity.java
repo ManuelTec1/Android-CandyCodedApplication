@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onSuccess(int statusCode, Header[] headers, String response) {
                         Log.d("AsyncHttpClient", "response = " + response);
-                        Gson gson = new GsonBuilder().create();;
+                        Gson gson = new GsonBuilder().create();
                         candies = gson.fromJson(response, Candy[].class);
 
                         addCandiesToDatabase(candies);
@@ -85,24 +85,12 @@ public class MainActivity extends AppCompatActivity {
     // ***
 
 
-   /* @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.menu.detail:
-                Intent intent = new Intent(this, InfoActivity.class);
-                if (intent.resolveActivity(getPackageManager()) !=null){
-                    startActivity(intent);
-                }
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
-*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent = new Intent(this, InfoActivity.class);
-        startActivity(intent);
+        Intent infoIntent = new Intent(this, InfoActivity.class);
+        startActivity(infoIntent);
         return super.onOptionsItemSelected(item);
     }
 

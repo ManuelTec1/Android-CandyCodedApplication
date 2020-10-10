@@ -32,10 +32,9 @@ public class InfoActivity extends AppCompatActivity {
 
     }
 
-    public void createMapIntent () {
-        Uri mapuri = Uri.parse(locationAddress);
-        Intent mapIntent = new Intent(Intent.ACTION_VIEW);
-        mapIntent.setData(mapuri);
+    public void createMapIntent (View view) {
+        Uri mapUri = Uri.parse(locationAddress);
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, mapUri);
         mapIntent.setPackage("com.google.android.apps.maps");
         if (mapIntent.resolveActivity(getPackageManager()) !=null){
             startActivity(mapIntent);
@@ -43,7 +42,7 @@ public class InfoActivity extends AppCompatActivity {
     }
 
 
-    public  void createPhoneintent () {
+    public  void createPhoneintent (View view) {
         Uri phoneUri = Uri.parse(tel);
         Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
         phoneIntent.setData(phoneUri);

@@ -13,9 +13,6 @@ import com.squareup.picasso.Picasso;
 public class InfoActivity extends AppCompatActivity {
     final String locationAddress = "geo:0,0?q=618 E South St Orlando, FL 32801";
     final String tel = "tel: 2125551212";
-    TextView storeAddress = (TextView) findViewById(R.id.text_view_address);
-    TextView phone = (TextView) findViewById(R.id.text_view_phone);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,33 +39,13 @@ public class InfoActivity extends AppCompatActivity {
     }
 
 
-    public  void createPhoneintent (View view) {
+    public  void createPhoneIntent(View view) {
         Uri phoneUri = Uri.parse(tel);
-        Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
-        phoneIntent.setData(phoneUri);
-        startActivity(phoneIntent);
+        Intent phoneIntent = new Intent(Intent.ACTION_DIAL, phoneUri);
+        if (phoneIntent.resolveActivity(getPackageManager()) != null) {
+            startActivity(phoneIntent);
+        }
     }
-
-
-
-// ***
-        // TODO - Task 2 - Launch the Google Maps Activity
-        // ***
-
-
-
-
-                // ***
-                // TODO - Task 3 - Launch the Phone Activity
-                // ***
-
-
-
-
-
-
-
-
 
 
 }

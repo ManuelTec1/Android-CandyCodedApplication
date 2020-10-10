@@ -28,6 +28,8 @@
         android:layout_marginTop="16dp"
         android:gravity="center_vertical"
         android:text="@string/candy_store_address"
+        android:clickable="true"
+        android:onClick="onClick"
         android:textColor="?android:attr/actionMenuTextColor"
         android:textSize="18sp"
         app:layout_constraintHorizontal_bias="0.0"
@@ -37,6 +39,7 @@
 
     <TextView
         android:id="@+id/text_view_phone"
+        android:clickable="true"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_marginLeft="0dp"
@@ -44,6 +47,7 @@
         android:layout_marginTop="16dp"
         android:gravity="center_vertical"
         android:text="(012)345-6789"
+        android:onClick="onClick"
         android:textColor="?android:attr/actionMenuTextColor"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="@+id/text_view_address"

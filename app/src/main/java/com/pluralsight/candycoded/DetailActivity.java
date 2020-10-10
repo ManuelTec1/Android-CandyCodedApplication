@@ -76,17 +76,17 @@ public class DetailActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.share_detail:
-                Intent shareIntent = new Intent(Intent.ACTION_SEND);
-                shareIntent.setType("text/plain");
-                shareIntent.putExtra(Intent.EXTRA_SUBJECT, HASHTAG_CANDYCODED);
-                shareIntent.putExtra(Intent.EXTRA_TEXT, SHARE_DESCRIPTION);
-                if (shareIntent.resolveActivity(getPackageManager()) !=null){
-                    startActivity(shareIntent);
-                }
-        }
-
+        createShareIntent();
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public  void createShareIntent (){
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        String sharedString = SHARE_DESCRIPTION + mCandyImageUrl + HASHTAG_CANDYCODED;
+        shareIntent.putExtra(Intent.EXTRA_TEXT, sharedString);
+        startActivity(shareIntent);
+
     }
 }

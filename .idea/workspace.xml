@@ -184,7 +184,21 @@
       <option name="project" value="LOCAL" />
       <updated>1602368742519</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&quot;Completed module&quot;">
+      <created>1602369132345</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602369132345</updated>
+    </task>
+    <task id="LOCAL-00006" summary="&quot;Completed module&quot;">
+      <created>1602369209689</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602369209689</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,10 +227,10 @@
       <screen x="0" y="30" width="1366" height="665" />
     </state>
     <state x="542" y="179" key="AndroidCreateXmlResourceDialog/0.30.1366.665@0.30.1366.665" timestamp="1602149357705" />
-    <state x="0" y="30" key="CommitChangelistDialog2" timestamp="1602369132062">
+    <state x="0" y="30" key="CommitChangelistDialog2" timestamp="1602369209590">
       <screen x="0" y="30" width="1366" height="665" />
     </state>
-    <state x="0" y="30" key="CommitChangelistDialog2/0.30.1366.665@0.30.1366.665" timestamp="1602369132062" />
+    <state x="0" y="30" key="CommitChangelistDialog2/0.30.1366.665@0.30.1366.665" timestamp="1602369209590" />
     <state width="1320" height="151" key="GridCell.Tab.0.bottom" timestamp="1602366522208">
       <screen x="0" y="30" width="1366" height="665" />
     </state>

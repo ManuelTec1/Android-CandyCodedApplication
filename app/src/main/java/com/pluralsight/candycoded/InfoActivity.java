@@ -12,7 +12,7 @@ import com.squareup.picasso.Picasso;
 
 public class InfoActivity extends AppCompatActivity {
     final String locationAddress = "geo:0,0?q=618 E South St Orlando, FL 32801";
-    final String tel = "tel: 2125551212";
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +40,7 @@ public class InfoActivity extends AppCompatActivity {
 
 
     public  void createPhoneIntent(View view) {
-        Uri phoneUri = Uri.parse(tel);
+        Uri phoneUri = Uri.parse("tel:0123456789");
         Intent phoneIntent = new Intent(Intent.ACTION_DIAL);
         phoneIntent.setData(phoneUri);
         startActivity(phoneIntent);

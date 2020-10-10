@@ -27,7 +27,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
         android:gravity="center_vertical"
-        android:text="618 E South St Orlando, FL"
+        android:text="@string/candy_store_address"
         android:textColor="?android:attr/actionMenuTextColor"
         android:textSize="18sp"
         app:layout_constraintHorizontal_bias="0.0"
@@ -59,6 +59,7 @@
         android:gravity="center_vertical"
         android:text="Everyday 10am-10pm"
         android:textSize="18sp"
+
         app:layout_constraintLeft_toLeftOf="@+id/text_view_phone"
         app:layout_constraintTop_toTopOf="@+id/image_view_hours" />
 
@@ -69,6 +70,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:adjustViewBounds="true"
+        android:clickable="true"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_view_map"
         app:srcCompat="@android:drawable/stat_sys_phone_call" />
@@ -91,6 +93,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:adjustViewBounds="true"
+        android:clickable="true"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_view_candy_store"
         app:srcCompat="@android:drawable/ic_dialog_map" />
